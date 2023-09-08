@@ -1,0 +1,136 @@
+@import url(./normalize.css);
+@import url(./fonts.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 901px;
+  background-image: url(../image/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 55px;
+}
+header .container {
+  height: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  transition: text-shadow 0.3s;
+}
+.header-nav a:hover {
+  text-shadow: 0px 0px 5px #FFF;
+}
+
+.header-nav__list ul {
+  display: flex;
+  column-gap: 45px;
+  list-style-type: none;
+}
+
+.header-nav__wrap {
+  display: flex;
+  align-items: center;
+}
+.header-nav__wrap img {
+  margin-right: 13px;
+}
+
+.header-offer {
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+}
+.header-offer h1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  margin-top: 24px;
+}
+
+.header-offer__wrap {
+  margin-top: 154px;
+}
+
+.header-offer__text {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1.44px;
+}
+
+.header-offer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.header-offer__bottom button {
+  width: 270px;
+  height: 100px;
+  flex-shrink: 0;
+  background: #3A4574;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.header-offer__bottom button:hover {
+  transform: scale(1.1);
+}
+.header-offer__bottom ul {
+  display: flex;
+  list-style-type: none;
+  column-gap: 25px;
+}
+.header-offer__bottom ul a {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.header-offer__bottom ul a:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=main.css.map */
