@@ -133,4 +133,141 @@ header .container {
   transform: scale(1.1);
 }
 
+.menu {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+.menu .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.menu-list h2 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.menu-list__item {
+  max-width: 469px;
+  border-bottom: 1px solid #E7E7E7;
+  padding-bottom: 20px;
+}
+
+.menu-list__text {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 10px;
+}
+.menu-list__text p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.menu-list__wrap {
+  display: flex;
+  column-gap: 12px;
+}
+
+.menu-list__span::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #D3B47F;
+  border-radius: 100px;
+  position: relative;
+  top: 4px;
+}
+
+.menu-bg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 668px;
+  height: 638px;
+}
+
+.menu-bg__item {
+  width: 471px;
+  height: 502px;
+  border: 2px solid #D3B47F;
+}
+
+.menu-bg__image1, .menu-bg__image2 {
+  position: absolute;
+}
+
+.menu-bg__image1 {
+  left: 0px;
+  bottom: 0px;
+}
+
+.menu-bg__image2 {
+  right: 0px;
+  top: 0px;
+}
+
+.quote {
+  background: #3A4574;
+  padding-top: 220px;
+  padding-bottom: 220px;
+}
+.quote .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote-wrap {
+  max-width: 785px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quote-wrap img {
+  max-width: 83px;
+  max-height: 58px;
+}
+.quote-wrap h2 {
+  color: #D3B47F;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 34px;
+  text-align: center;
+}
+
+.quote-wrap__text {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.quote-wrap__name {
+  color: #D3B47F;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 5.88px;
+  margin-top: 40px;
+}
+
+.quote-arrowdown, .quote-arrowup {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */
