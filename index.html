@@ -15,10 +15,10 @@
                     <a href="/" class="header-nav__logo"><img src="./assests/image/logo.png" alt="logo"></a>
                     <nav class="header-nav__list">
                         <ul>
-                            <li><a href="#">À la carte</a></li>
+                            <li><a href="#menu">À la carte</a></li>
                             <li><a href="#">Wijnkaart</a></li>
                             <li><a href="#">Lunchmenu</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contacts">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -44,6 +44,30 @@
             </div>
         </div>
     </header>
+    <div class="form-module">
+        <div class="container">
+            <img src="./assests/icons/close.svg" alt="close" class="form-module__image">
+            <h2>Have any questions?</h2>
+            <form action="#">
+                <div class="form-module__wrap">
+                    <div class="form-module__item">
+                        <label for="firstname">Name</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Input your name" required>
+                    </div>
+                    <div class="form-module__item">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Input your email" required>
+                    </div>
+                </div>
+                <div class="form-module__item textarea">
+                    <label for="request">Speciale Request</label>
+                    <textarea id="request" name="request" placeholder="Input your special request"></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+
+        </div>
+    </div>
     <main>
         <section class="menu" id="menu">
             <div class="container menu-container">
@@ -118,15 +142,35 @@
         </section>
         <section class="quote" id="quote">
             <div class="container">
-                <img class="quote-arrowup" src="./assests/icons/arrow-up.svg" alt="arrow up">
-                <div class="quote-wrap">
-                    <img src="./assests/image/quote.png" alt="quote">
-                    <h2>Goede service, lekker eten, toffe ambiance</h2>
-                    <p class="quote-wrap__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
-                    </p>
-                    <p class="quote-wrap__name">ALAIN HEYNDRICKX</p>
+                <img class="quote-arrow__up swiper-button-prev" src="./assests/icons/arrow-up.svg" alt="arrow up">
+                <div class="quote-wrap swiper mySwiper">
+                    <div class="quote-slider swiper-wrapper">
+                        <div class="quote-wrap__item swiper-slide">
+                            <img src="./assests/image/quote.png" alt="quote">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <p class="quote-wrap__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                            </p>
+                            <p class="quote-wrap__name">ALAIN HEYNDRICKX</p>
+                        </div>
+                        <div class="quote-wrap__item swiper-slide">
+                            <img src="./assests/image/quote.png" alt="quote">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <p class="quote-wrap__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                            </p>
+                            <p class="quote-wrap__name">ALAIN HEYNDRICKX</p>
+                        </div>
+                        <div class="quote-wrap__item swiper-slide">
+                            <img src="./assests/image/quote.png" alt="quote">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <p class="quote-wrap__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                            </p>
+                            <p class="quote-wrap__name">ALAIN HEYNDRICKX</p>
+                        </div>
+    
+                    </div>
+
                 </div>
-                <img class="quote-arrowdown" src="./assests/icons/arrow-down.svg" alt="arrow down">
+                <img class="quote-arrow__down swiper-button-next" src="./assests/icons/arrow-down.svg" alt="arrow down">
             </div>
         </section>
         <section class="food" id="food">
@@ -225,15 +269,15 @@
                     </div>
                     <div class="contacts-form">
                         <h2>have any questions?</h2>
-                        <form action="#">
+                        <form action="#" class="form">
                             <div class="form-wrap">
                                 <div class="form-wrap__item">
                                     <label for="firstname">Name</label>
-                                    <input id="firstname" type="text" name="firstname" placeholder="Input your name">
+                                    <input id="firstname" type="text" name="firstname" placeholder="Input your name" required>
                                 </div>
                                 <div class="form-wrap__item">
                                     <label for="email">Email</label>
-                                    <input id="email" type="email" name="email" placeholder="Input your email">
+                                    <input id="email" type="email" name="email" placeholder="Input your email" required>
                                 </div>
                             </div>
                             <div class="form-wrap__item">
